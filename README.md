@@ -2,9 +2,9 @@
 Community-curated list of currently active malicious IP addresses identified in targeted attacks. Use this blocklist to improve network monitoring, strengthen firewall defenses and enhance your overall security posture against ongoing threats.
 
 # Statistics
-Update of the Malicious-IP List on **2026-04-27 15:44 IST**
+Update of the Malicious-IP List on **2026-04-29 18:16 IST**
 
-Total Malicious IP's **146100**
+Total Malicious IP's **146101**
 
 📜 Usage and Guidance 📜
 
