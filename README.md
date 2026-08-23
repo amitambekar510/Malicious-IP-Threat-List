@@ -61,18 +61,18 @@
 
 ```mermaid
 flowchart TB
-    subgraph Sources["🔍 Threat Intelligence Sources"]
-        S1[AbuseIPDB API\n(High-confidence abusive IPs)]
-        S2[FireHOL Blocklists\n(Level 1-4 community lists)]
-        S3[Tor Project\n(Current exit nodes)]
-        S4[AlienVault OTX\n(Pulses with IP indicators)]
+    subgraph Sources["Threat Intelligence Sources"]
+        S1["AbuseIPDB API\nHigh-confidence abusive IPs"]
+        S2["FireHOL Blocklists\nLevel 1-4 community lists"]
+        S3["Tor Project\nCurrent exit nodes"]
+        S4["AlienVault OTX\nPulses with IP indicators"]
     end
 
-    Collect["🤖 Automated Collection\n(Every 12h via GitHub Actions)"]
-    Validate["✅ Multi-Source Validation\nVT ≥3 · AbuseIPDB ≥25% · Talos"]
-    Dedup["🚫 Zero-Duplicate Guarantee\nBloom Filter + Git History + Cross-Partition"]
-    Repos["📦 Partitioned Repositories\nPart 1: 100K · Part 2: 100K · Auto-scaling"]
-    Deploy["🚀 Direct Tool Integration\nPalo Alto · FortiGate · Sentinel · Splunk · QRadar · CrowdStrike · ELK · MISP"]
+    Collect["Automated Collection\nEvery 12h via GitHub Actions"]
+    Validate["Multi-Source Validation\nVT 3+ · AbuseIPDB 25+ Talos"]
+    Dedup["Zero-Duplicate Guarantee\nBloom Filter + Git History + Cross-Partition"]
+    Repos["Partitioned Repositories\nPart 1: 100K · Part 2: 100K · Auto-scaling"]
+    Deploy["Direct Tool Integration\nPalo Alto · FortiGate · Sentinel · Splunk · QRadar · CrowdStrike · ELK · MISP"]
 
     Sources --> Collect --> Validate --> Dedup --> Repos --> Deploy
 
