@@ -17,7 +17,6 @@
 ![Last Update](https://img.shields.io/github/last-commit/amitambekar510/Malicious-IP-Threat-List?style=for-the-badge&label=Updated&color=00ff41)
 ![Auto-Update](https://img.shields.io/badge/Auto_Update-Every_12h-1abc9c?style=for-the-badge&logo=githubactions)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-![Build](https://img.shields.io/github/actions/workflow/status/amitambekar510/Malicious-IP-Threat-List/validate.yml?branch=main&label=Validation&style=for-the-badge)
 
 </div>
 
@@ -63,17 +62,17 @@
 ```mermaid
 flowchart TB
     subgraph Sources["🔍 Threat Intelligence Sources"]
-        S1[AbuseIPDB API<br/>(High-confidence abusive IPs)]
-        S2[FireHOL Blocklists<br/>(Level 1-4 community lists)]
-        S3[Tor Project<br/>(Current exit nodes)]
-        S4[AlienVault OTX<br/>(Pulses with IP indicators)]
+        S1[AbuseIPDB API\n(High-confidence abusive IPs)]
+        S2[FireHOL Blocklists\n(Level 1-4 community lists)]
+        S3[Tor Project\n(Current exit nodes)]
+        S4[AlienVault OTX\n(Pulses with IP indicators)]
     end
 
-    Collect["🤖 Automated Collection<br/>(Every 12h via GitHub Actions)"]
-    Validate["✅ Multi-Source Validation<br/>VT ≥3 · AbuseIPDB ≥25% · Talos"]
-    Dedup["🚫 Zero-Duplicate Guarantee<br/>Bloom Filter + Git History + Cross-Partition"]
-    Repos["📦 Partitioned Repositories<br/>Part 1: 100K · Part 2: 100K · Auto-scaling"]
-    Deploy["🚀 Direct Tool Integration<br/>Palo Alto · FortiGate · Sentinel · Splunk · QRadar · CrowdStrike · ELK · MISP"]
+    Collect["🤖 Automated Collection\n(Every 12h via GitHub Actions)"]
+    Validate["✅ Multi-Source Validation\nVT ≥3 · AbuseIPDB ≥25% · Talos"]
+    Dedup["🚫 Zero-Duplicate Guarantee\nBloom Filter + Git History + Cross-Partition"]
+    Repos["📦 Partitioned Repositories\nPart 1: 100K · Part 2: 100K · Auto-scaling"]
+    Deploy["🚀 Direct Tool Integration\nPalo Alto · FortiGate · Sentinel · Splunk · QRadar · CrowdStrike · ELK · MISP"]
 
     Sources --> Collect --> Validate --> Dedup --> Repos --> Deploy
 
