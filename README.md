@@ -1,16 +1,8 @@
 <div align="center">
 
-```
-███╗   ███╗██╗███╗   ██╗██╗███████╗████████╗ █████╗ ██████╗  ██████╗ ██████╗ ██████╗ ██╗   ██╗
-████╗ ████║██║████╗  ██║██║██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██══██╗╚██╗ ██╔╝
-██╔████╔██║██║██╔██╗ ██║██║███████╗   ██║   ███████║██████╔╝██║   ██║██████╔╝██████╔╝ ╚████╔╝
-██║╚██╔╝██║██║██║╚██╗██║██║╚════██║   ██║   ██╔══██║██╔══██╗██║   ██║██══██╗██══██╗  ╚██╔╝
-██║ ╚═╝ ██║██║██║ ╚████║██║███████║   ██║   ██║  ██║██║  ██║╚██████╔╝██║  ██║██║  ██║   ██║
-╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═════╝ ╚═════╝ ╚═════╝   ╚═╝
-```
+![Malicious IP Threat Intelligence Feed](assets/banner.svg)
 
-# 🔴 Malicious IP Threat Intelligence Feed
-### Community-curated list of active malicious IP addresses for network defense
+</div>
 
 ![Feed Status](https://img.shields.io/badge/Feed-ACTIVE-00ff41?style=for-the-badge)
 ![Total IPs](https://img.shields.io/badge/Total_IPs-149,000+-00ff41?style=for-the-badge)
